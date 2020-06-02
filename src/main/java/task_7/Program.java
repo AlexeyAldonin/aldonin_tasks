@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         int n = requestForNumber();
-        System.out.println(recursion(n));
+        StringBuilder out = new StringBuilder(recursion(n));
+        System.out.println(out.reverse());
     }
 
     static int requestForNumber () {
@@ -17,6 +18,6 @@ public class Program {
         if (n == 1) {
             return "1";
         }
-        return recursion(n - 1) + " " + n;
+        return n + " " + recursion(n - 1);
     }
 }

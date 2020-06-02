@@ -10,12 +10,12 @@ public class Rectangle extends Figure {
 
     @Override
     protected int estimateSquare() {
-        return this.side1 * side2;
+        return this.side1 * this.side2;
     }
 
     @Override
     protected int estimatePerimeter() {
-        return (side1 + side2) * 2;
+        return (this.side1 + this.side2) * 2;
     }
 
     boolean isFourSquare () {
