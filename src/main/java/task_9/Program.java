@@ -14,7 +14,7 @@ public class Program {
         words.add("James");
         words.add("Ferdinand");
 
-        words = words.stream().filter(word -> word.length() < 4).collect(Collectors.toList());
+        words = words.stream().filter(word -> word.length() > 4).collect(Collectors.toList());
 
 
         System.out.println(words);
